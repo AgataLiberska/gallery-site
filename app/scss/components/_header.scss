@@ -1,0 +1,22 @@
+.header {
+  padding: 1rem 1.5rem;
+
+  @media (min-width: 62rem) {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: clamp(1.75rem, 1rem + 1vw, 2.5rem);
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    @media (max-width: 62rem) {
+      display: none;
+    }
+  }
+}

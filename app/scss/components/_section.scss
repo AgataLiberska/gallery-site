@@ -1,0 +1,30 @@
+.section {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+
+  @media (min-width: 62rem) {
+    scroll-snap-align: start;
+  }
+
+  &__image {
+    width: min(100% - 3rem, 34rem);
+
+    & img {
+      box-shadow: 0.6px 1px 1.2px hsl(var(--old-school) / 0.47),
+        1.3px 2.2px 2.5px -0.8px hsl(var(--old-school) / 0.42),
+        2.7px 4.8px 5.5px -1.7px hsl(var(--old-school) / 0.37),
+        6px 10.6px 12.1px -2.6px hsl(var(--old-school) / 0.32),
+        12.3px 21.6px 24.6px -3.4px hsl(var(--old-school) / 0.27);
+    }
+  }
+
+  &__text {
+    padding-block: 1rem;
+    text-align: center;
+
+    @media (min-width: 62rem) {
+      padding-block: 2rem;
+    }
+  }
+}

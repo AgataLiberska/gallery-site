@@ -5,102 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
-    <link href="/dist/index.css" as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/index.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <h1>Gallery Site</h1>
-      <p>Built for funsies</p>
+    <header class="header">
+      <h1 class="header__logo">Gallery</h1>
+      <p class="header__text">Built for funsies</p>
     </header>
     <main>
-      <section id="old-school">
-        <figure>
-          <img src="/assets/old-school.jpg" alt width="800" height="1000" />
-          <figcaption>Old School</figcaption>
-        </figure>
-      </section>
-      <section id="chinatown">
-        <figure>
-          <img
-            src="/assets/chinatown-shop.jpg"
-            alt
-            width="800"
-            height="1000"
-            loading="lazy"
-          />
-          <figcaption>Chinatown London</figcaption>
-        </figure>
-      </section>
-      <section id="aberdyfi">
-        <figure>
-          <img
-            src="/assets/aberdovey.jpg"
-            alt
-            width="800"
-            height="1000"
-            loading="lazy"
-          />
-          <figcaption>Aberdyfi</figcaption>
-        </figure>
-      </section>
-      <section id="rhodes">
-        <figure>
-          <img
-            src="/assets/rhodes.jpg"
-            alt
-            width="800"
-            height="1000"
-            loading="lazy"
-          />
-          <figcaption>Rhodes</figcaption>
-        </figure>
-      </section>
-      <section id="krakow">
-        <figure>
-          <img
-            src="/assets/krakow.jpg"
-            alt
-            width="800"
-            height="1000"
-            loading="lazy"
-          />
-          <figcaption>Kraków</figcaption>
-        </figure>
-      </section>
-      <section id="selfridges">
-        <figure>
-          <img
-            src="/assets/selfridges.jpg"
-            alt
-            width="800"
-            height="1000"
-            loading="lazy"
-          />
-          <figcaption>Selfridges Birmingham</figcaption>
-        </figure>
-      </section>
-      <section id="chinatown-gate">
-        <figure>
-          <img
-            src="/assets/chinatown.jpg"
-            alt
-            width="800"
-            height="1000"
-            loading="lazy"
-          />
-          <figcaption>Chinatown Gate</figcaption>
-        </figure>
-      </section>
+      <div class="scroll-container">
+        <section id="old-school" class="section">
+          <figure class="section__image">
+            <img src="/assets/old-school.jpg" alt width="800" height="1000" />
+            <figcaption class="section__text">The Old School</figcaption>
+          </figure>
+        </section>
+        <section id="chinatown" class="section scroll-y-child">
+          <figure class="section__image">
+            <img
+              src="/assets/chinatown-shop.jpg"
+              alt
+              width="800"
+              height="1000"
+              loading="lazy"
+            />
+            <figcaption class="section__text">Chinatown London</figcaption>
+          </figure>
+        </section>
+        <section id="aberdyfi" class="section">
+          <figure class="section__image">
+            <img
+              src="/assets/aberdovey.jpg"
+              alt
+              width="800"
+              height="1000"
+              loading="lazy"
+            />
+            <figcaption class="section__text">Aberdyfi</figcaption>
+          </figure>
+        </section>
+        <section id="rhodes" class="section">
+          <figure class="section__image">
+            <img
+              src="/assets/rhodes.jpg"
+              alt
+              width="800"
+              height="1000"
+              loading="lazy"
+            />
+            <figcaption class="section__text">Rhodes</figcaption>
+          </figure>
+        </section>
+        <section id="krakow" class="section">
+          <figure class="section__image">
+            <img
+              src="/assets/krakow.jpg"
+              alt
+              width="800"
+              height="1000"
+              loading="lazy"
+            />
+            <figcaption class="section__text">Kraków</figcaption>
+          </figure>
+        </section>
+        <section id="selfridges" class="section">
+          <figure class="section__image">
+            <img
+              src="/assets/selfridges.jpg"
+              alt
+              width="800"
+              height="1000"
+              loading="lazy"
+            />
+            <figcaption class="section__text">Selfridges Birmingham</figcaption>
+          </figure>
+        </section>
+        <section id="chinatown-gate" class="section">
+          <figure class="section__image">
+            <img
+              src="/assets/chinatown.jpg"
+              alt
+              width="800"
+              height="1000"
+              loading="lazy"
+            />
+            <figcaption class="section__text">Chinatown Gate</figcaption>
+          </figure>
+        </section>
+      </div>
     </main>
-    <footer>
-      <section>
+    <footer class="footer">
+      <section class="footer__description">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas,
         cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Tempore consectetur magnam doloremque asperiores. Sed qui esse natus
         quam facilis suscipit inventore omnis quis magnam, similique beatae
         blanditiis perspiciatis minima id.
       </section>
-      <section>
+      <section class="footer__links">
         <ul>
           <li><a href="#old-school">Old School</a></li>
           <li><a href="#chinatown">Chinatown London</a></li>
