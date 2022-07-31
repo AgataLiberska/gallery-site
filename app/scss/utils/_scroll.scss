@@ -1,8 +1,15 @@
-.scroll-container {
+html {
   @media (min-width: 62rem) {
     max-height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+  }
+
+  & section {
+    @media (min-width: 62rem) {
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
   }
 }

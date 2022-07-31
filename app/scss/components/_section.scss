@@ -3,10 +3,6 @@
   display: grid;
   place-items: center;
 
-  @media (min-width: 62rem) {
-    scroll-snap-align: start;
-  }
-
   &__image {
     width: min(100% - 3rem, 34rem);
 
